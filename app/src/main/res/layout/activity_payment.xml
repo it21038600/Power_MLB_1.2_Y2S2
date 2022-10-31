@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple"
+    tools:context=".Payment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/payment_Title"
+        android:background="#FF6200EE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Payment Details of Tourist"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageID"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_Title"
+        app:srcCompat="@drawable/credit_card" />
+
+    <TextView
+        android:id="@+id/TotalID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="Total Payment"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageID" />
+
+    <TextView
+        android:id="@+id/BalanceID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Available Balance"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/TotalID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TotalID"
+        app:layout_constraintTop_toBottomOf="@+id/TotalID" />
+
+    <TextView
+        android:id="@+id/BonusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="special Bonus"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/BalanceID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/BalanceID"
+        app:layout_constraintTop_toBottomOf="@+id/BalanceID" />
+
+    <TextView
+        android:id="@+id/total_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:text="RS. 500"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageID" />
+
+    <TextView
+        android:id="@+id/balance_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="RS. 1000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/total_id"
+        app:layout_constraintStart_toStartOf="@+id/total_id"
+        app:layout_constraintTop_toBottomOf="@+id/total_id" />
+
+    <TextView
+        android:id="@+id/bonus_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="RS.20%"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/balance_id"
+        app:layout_constraintStart_toStartOf="@+id/balance_id"
+        app:layout_constraintTop_toBottomOf="@+id/balance_id" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="430dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BonusID" />
+
+    <TextView
+        android:id="@+id/PaymentAmountID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="18dp"
+        android:text="Payment Amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/Amount_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="76dp"
+        android:text="RS.4900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="Payment"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_Title" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_Title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
